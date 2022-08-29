@@ -1,6 +1,5 @@
-import React from "react";
-import PropTypes from "prop-types";
-export default function SectionTitle({ title, children }) {
+import { title } from "../Interfaces/interfaces";
+export default function SectionTitle({ title, children }: title) {
   return (
     <section>
       <h2>{title}</h2>
@@ -8,8 +7,3 @@ export default function SectionTitle({ title, children }) {
     </section>
   );
 }
-
-SectionTitle.propTypes = {
-  title: PropTypes.string,
-  children: PropTypes.array,
-};

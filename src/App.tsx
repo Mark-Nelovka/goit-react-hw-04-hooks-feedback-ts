@@ -10,7 +10,7 @@ function App() {
   const [neutral, setNeutral] = useState(0);
   const [bad, setBad] = useState(0);
 
-  const onIncrement = (data) => {
+  const onIncrement = (data: string) => {
     if (data === "good") {
       setGood((prevState) => prevState + 1);
       return;
@@ -22,11 +22,11 @@ function App() {
     }
   };
 
-  const countTotalFeedback = (good, neutral, bad) => {
+  const countTotalFeedback = (good: number, neutral: number, bad: number) => {
     return good + neutral + bad;
   };
 
-  const countPositiveFeedbackPercentage = (good, neutral, bad) => {
+  const countPositiveFeedbackPercentage = (good: number, neutral: number, bad: number) => {
     const totalFeedback = good + neutral + bad;
 
     let positFeedPerctenger = (good / totalFeedback) * 100;

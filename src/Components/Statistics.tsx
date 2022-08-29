@@ -1,12 +1,11 @@
-import React from "react";
-import PropTypes from "prop-types";
+import { statistics } from "../Interfaces/interfaces";
 export default function Statistics({
   good,
   neutral,
   bad,
   total,
   positivePercentage,
-}) {
+}: statistics) {
   return (
     <div>
       <h2>Statistics</h2>
@@ -18,11 +17,3 @@ export default function Statistics({
     </div>
   );
 }
-
-Statistics.propTypes = {
-  good: PropTypes.number,
-  neutral: PropTypes.number,
-  bad: PropTypes.number,
-  total: PropTypes.number,
-  positivePercentage: PropTypes.number,
-};

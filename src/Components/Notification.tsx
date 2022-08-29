@@ -1,9 +1,4 @@
-import React from "react";
-import PropTypes from "prop-types";
-export default function Notification({ message }) {
+import { notification } from "../Interfaces/interfaces";
+export default function Notification({ message }: notification) {
   return <p>{message}</p>;
 }
-
-Notification.propTypes = {
-  message: PropTypes.string,
-};
